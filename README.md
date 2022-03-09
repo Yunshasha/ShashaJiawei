@@ -1,2 +1,2 @@
 # ShashaJiawei
-2022 PolitecnicoDiMilano MasterThesis
+2022 Politecnico di Milano Master Thesis
