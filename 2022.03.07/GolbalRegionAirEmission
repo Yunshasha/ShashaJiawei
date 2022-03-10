@@ -1,0 +1,71 @@
+/** 
+https://ads.atmosphere.copernicus.eu/cdsapp#!/dataset/cams-global-emission-inventories?tab=overview
+CAMS global emission inventories 
+This data set contains gridded distributions of global anthropogenic and natural emissions. 
+**/
+/** data download **/
+Varibles /** different Compound **/
+Source /** Anthropogenic /Aviation /Biogenic /Oceanic /Shipping /Soil /Termites **/
+Version /** from 1.1 to 4.2 , latest **/
+Year  /** one year one update from 2000 to 2020 **/
+API requst  
+/** how to use the CDs API:   https://ads.atmosphere.copernicus.eu/api-how-to  **/
+                
+                import cdsapi
+                    c = cdsapi.Client()
+
+                    c.retrieve("dataset-short-name", 
+                               {... sub-selection request ...}, 
+                               "target-file")
+
+/** varible: carbon monoxide,  source: anthropogenic, version: latest, year: 2020 **/
+
+                import cdsapi
+
+                c = cdsapi.Client()
+
+                c.retrieve(
+                    'cams-global-emission-inventories',
+                    {
+                        'version': 'latest',
+                        'format': 'zip',
+                        'variable': 'carbon_monoxide',
+                        'source': 'anthropogenic',
+                        'year': '2020',
+                    },
+                    'download.zip')
+              
+              
+              
+                    
+EDGAR     http://edgar.jrc.ec.europa.eu/    
+EDGAR is a multipurpose, independent, global database of anthropogenic emissions of greenhouse gases and air pollution on Earth. EDGAR provides independent emission estimates compared to what reported by European Member States or by Parties under the United Nations Framework Convention on Climate Change (UNFCCC), using international statistics and a consistent IPCC methodology.
+EDGAR provides both emissions as national totals and gridmaps at 0.1 x 0.1 degree resolution at global level, with yearly, monthly and up to hourly data.
+ 有不同国家不同年份 Fossil CO2 Share ，Gross Domestic Product Share ，Population Share 占 world 总数的比值。
+ 有不同国家不同年份 Greenhouse gases        由不同的Sector（e.g buildings , transports, power industry）           产生的数值和趋势图，可以以不同格式下载。
+ 有不同国家不同年份 Air and Toxic pollutant 由不同Sector（e.g buildings , transports, power industry, Agriculture) 产生的数值和趋势图，可以以不同格式下载。
+
+GHG emissions and fossil CO2 of all world countries(report pdf)：  https://edgar.jrc.ec.europa.eu/emissions_reports  /** derived from above EDGAR **/
+
+
+Emissions Data and Maps : https://edgar.jrc.ec.europa.eu/emissions_data_and_maps
+
+Global Greenhouse Gas Emissions EDGAR v6.0 :  CH4/ CO2_excl_short-cycle_org_C/ CO2_org_short-cycle_C/ N2O
+        Timeseries 1970-2018
+        Annual gridmaps 1970-2018 /** text,image or  NetCDF **/
+        Annual sector-specific gridmaps (1970-2018) [and monthly sector-specific gridmaps (2000-2018)]
+Air Pollutants  Global Air Pollutant Emissions EDGAR v5.0:   BC/ CO/ NH3/ NMVOC/ NOx/ OC/ PM10/ PM2.5/ SO2
+        Timeseries 1970-2015
+        Annual gridmaps 1970-2015
+        Annual (and monthly) sector-specific gridmaps
+EDGAR Food  1/3 of global GHG emissions come from the food system 
+        粮食和人口的关系，人口和排放的关系。 
+Urban areas
+Toxic Pollutants    Global Toxic Pollutants Emissions (November 2017) EDGARv4.tox2
+Temporal Profiles 
+        将 EDGAR 的年度排放数据分解为月度和每小时排放量，以及受管制的气体和颗粒空气污染物以及温室气体的国家和部门特定时间剖面
+HTAP  
+        按行业划分的排放
+
+
+                    
