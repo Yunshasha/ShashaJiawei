@@ -33,3 +33,9 @@
 | Time-Scale  | Threshold |
 | ------------- | ------------- |
 | 24-Hour Mean  | 40 μg/m3  |
+
+### CO (Carbon Monoxide)
+
+| Time-Scale  | Threshold |
+| ------------- | ------------- |
+| 24-Hour Mean  | 4 μg/m3  |
