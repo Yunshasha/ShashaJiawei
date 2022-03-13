@@ -19,6 +19,8 @@
 | 8-Hour Daily (Maximum)  | 100 μg/m3  |
 | 8-Hour Mean (Peak Season)  | 60 μg/m3  |
 
+*Peak season is defined as an average of daily maximum 8-hour mean O3 concentration in the six consecutive months with the highest six-month running average O3 concentration*
+
 ### NO2 (Nitrogen Dioxide)
 
 | Time-Scale  | Threshold |
