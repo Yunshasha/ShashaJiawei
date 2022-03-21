@@ -20,7 +20,7 @@ key: xxxx
 
 ### 3-Paste the code copied in step 2
 
-Paste it into a .txt file in c:\\Users\%username%\, and save it with name as ".cdsapirc" and type as "All File".
+Paste it into a .txt file created in C:\\Users\%username%\, and save it with name as ".cdsapirc" and type as "All File".
 
 ### 4-Install API
 
