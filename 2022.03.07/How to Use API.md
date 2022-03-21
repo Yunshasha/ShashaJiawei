@@ -28,10 +28,10 @@ Copen Anaconda and run the following command:
 
 ``
 pip install cdsapi
-``# for Python 2.7
+`` for Python 2.7
 
 or
 
 ``
 pip3 install cdsapi
-``# for Python 3
+`` for Python 3
