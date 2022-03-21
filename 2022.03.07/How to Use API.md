@@ -27,11 +27,11 @@ Paste it into a .txt file in c:\\Users\%username%\, and save it with name as ".c
 Copen Anaconda and run the following command:
 
 ``
-pip install cdsapi # for Python 2.7
-``
+pip install cdsapi
+``# for Python 2.7
 
 or
 
 ``
-pip3 install cdsapi # for Python 3
-``
+pip3 install cdsapi
+``# for Python 3
