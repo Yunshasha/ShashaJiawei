@@ -7,7 +7,7 @@ import cdsapi #import API
 
 c = cdsapi.Client() #call API variable
 
-c.retrieve(
+c.retrieve( #the only method known is "retrieve", maybe exists others
     'cams-europe-air-quality-forecasts', #name of dataset
     {
         'model': 'ensemble',
