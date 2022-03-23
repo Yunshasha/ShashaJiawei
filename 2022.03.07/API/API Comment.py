@@ -20,6 +20,6 @@ c.retrieve( #the only method known is "retrieve", maybe exists others
             '00:00', '23:00',
         ], #for multiple choices
         'leadtime_hour': '0',
-    }, #all the check boxes and options in each dataset, written in dictionary format in API method
+    }, #all the check boxes and options in each dataset, written in dictionary format in API method input variables
     'download.nc' #the downloaded file name)
 ``
