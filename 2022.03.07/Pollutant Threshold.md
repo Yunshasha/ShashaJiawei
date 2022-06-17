@@ -38,4 +38,4 @@
 
 | Time-Scale  | Threshold |
 | ------------- | ------------- |
-| 24-Hour Mean  | 4 μg/m3  |
+| 24-Hour Mean  | 4 mg/m3  |
